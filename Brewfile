@@ -1,8 +1,13 @@
-# # Brew Stuff
+# Taps
 tap 'caskroom/cask'
+tap 'buo/cask-upgrade'
 
+# Casks - GUI
 cask 'visual-studio-code'
+cask 'pritunl' # OpenVPN Client
 
+# Casks - CLI
+cask 'iterm2'
 
 ## OLD STUFF HERE
 # tap 'homebrew/brewdler'
@@ -19,11 +24,6 @@ cask 'visual-studio-code'
 # brew 'rbenv-bundler'
 # brew 'ruby-build'
 # brew 'imagemagick'
-# 
-# # ZSH Tools
-# brew 'zsh'
-# brew 'zsh-completions'
-# brew 'zsh-syntax-highlighting'
 # 
 # # Docker Tools
 # brew 'docker'
@@ -54,9 +54,6 @@ cask 'visual-studio-code'
 # # Go Tools
 # brew 'go'
 # brew 'godep'
-# 
-# # Vim
-# brew 'vim'
 # 
 # # GUI Tools
 # cask 'slack'
