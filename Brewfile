@@ -1,6 +1,7 @@
 # Taps
 tap 'caskroom/cask'
 tap 'buo/cask-upgrade'
+tap 'homebrew/cask-versions'
 
 # Casks - GUI
 cask 'visual-studio-code'
