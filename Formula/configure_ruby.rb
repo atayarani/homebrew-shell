@@ -1,7 +1,7 @@
-class ConfigureVim < Formula
+class ConfigureRuby < Formula
     desc "Configure things required by my Ruby setup"
     homepage "https://github.com/atayarani/homebrew-shell"
-    url "https://github.com/atayarani/homebrew-shell/archive/v0.0.32.tar.gz"
+    url "https://github.com/atayarani/homebrew-shell/archive/v0.0.33.tar.gz"
 
     depends_on "rbenv"
     depends_on "rbenv-bundler"

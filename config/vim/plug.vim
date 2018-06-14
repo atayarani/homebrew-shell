@@ -10,3 +10,5 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+filetype plugin indent on                   " required!
+call plug#end()
