@@ -2,7 +2,7 @@ require 'pry'
 class ConfigureZsh < Formula
   desc "Configure things required by my ZSH setup"
   homepage "https://github.com/atayarani/homebrew-shell"
-  url "https://github.com/atayarani/homebrew-shell/archive/v0.0.27.tar.gz"
+  url "https://github.com/atayarani/homebrew-shell/archive/v0.0.28.tar.gz"
 
   depends_on "zplug"
   depends_on "zsh"
@@ -12,6 +12,7 @@ class ConfigureZsh < Formula
   def install
     prefix.install File.join("config", "zsh")
     bin.install "true.sh"
+    puts prefix
   end
 
   def caveats; binding.pry; <<~EOS
