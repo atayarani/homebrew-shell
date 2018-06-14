@@ -13,8 +13,4 @@ class ConfigureRuby < Formula
     def install
       bin.install "true.sh"
     end
-    
-    def vim_path
-      @vim_path ||= File.join(HOMEBREW_PREFIX, "Cellar", name, version, "vim", "vimrc")
-    end
 end
