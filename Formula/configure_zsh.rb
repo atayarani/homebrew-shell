@@ -2,7 +2,7 @@ require 'pry'
 class ConfigureZsh < Formula
   desc "Configure things required by my ZSH setup"
   homepage "https://github.com/atayarani/homebrew-shell"
-  url "https://github.com/atayarani/homebrew-shell/archive/v0.0.25.tar.gz"
+  url "https://github.com/atayarani/homebrew-shell/archive/v0.0.26.tar.gz"
 
   depends_on "zplug"
   depends_on "zsh"
@@ -16,12 +16,8 @@ class ConfigureZsh < Formula
 
   def caveats; <<~EOS
     In order to load the zshrc here, please run the following:
-      echo "source #{zsh_link_path}" > #{ENV["HOME"]}/.zshrc
+      echo "source #{File.join(prefix, "zsh", "zshrc")}" > #{ENV["HOME"]}/.zshrc
   EOS
-  end
-
-  def zsh_link_path
-    @zsh_link_path ||= File.join(prefix, "configure", "zsh", "zshrc")
   end
 
   test do
