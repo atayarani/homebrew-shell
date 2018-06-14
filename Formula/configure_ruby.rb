@@ -1,7 +1,7 @@
 class ConfigureRuby < Formula
     desc "Configure things required by my Ruby setup"
     homepage "https://github.com/atayarani/homebrew-shell"
-    url "https://github.com/atayarani/homebrew-shell/archive/v0.0.34.tar.gz"
+    url "https://github.com/atayarani/homebrew-shell/archive/v0.0.35.tar.gz"
 
     depends_on "rbenv"
     depends_on "rbenv-bundler"
@@ -10,6 +10,10 @@ class ConfigureRuby < Formula
 
     keg_only "config only", "Nothing to execute here"
 
+    def install
+      bin.install "true.sh"
+    end
+    
     def vim_path
       @vim_path ||= File.join(HOMEBREW_PREFIX, "Cellar", name, version, "vim", "vimrc")
     end
