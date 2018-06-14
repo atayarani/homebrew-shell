@@ -19,12 +19,6 @@ cask 'iterm2'
 # brew 'gcc46'
 # brew 'glib'
 # 
-# # Ruby Tools
-# brew 'rbenv'
-# brew 'rbenv-bundler'
-# brew 'ruby-build'
-# brew 'imagemagick'
-# 
 # # Docker Tools
 # brew 'docker'
 # brew 'docker-compose', args: ['without-docker-machine']
