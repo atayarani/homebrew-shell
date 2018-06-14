@@ -1,9 +1,9 @@
 class ConfigureZsh < Formula
-  ver = 'v0.0.9'
-  zsh_path = File.join('/','usr','local','Cellar','configure_zsh', ver.tr('v',''), 'zsh', 'zshrc')
+  ver = '0.0.10'
+  zsh_path = File.join('/','usr','local','Cellar','configure_zsh', ver, 'zsh', 'zshrc')
   desc 'Configure things required by my ZSH setup'
   homepage 'https://github.com/atayarani/homebrew-shell'
-  url "https://github.com/atayarani/homebrew-shell/archive/#{ver}.zip"
+  url "https://github.com/atayarani/homebrew-shell/archive/v#{ver}.zip"
   version ver
 
   depends_on 'zplug'
