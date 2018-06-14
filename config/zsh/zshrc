@@ -5,29 +5,29 @@ source $ZPLUG_HOME/init.zsh
 zplug update
 # 
 # # Prompt
-zplug mgee/slimline
+zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 # 
 # # Zplug manage Zplug
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # 
 # ## Basic Bundles
 # zplug djui/alias-tips
-# zplug zsh-users/zsh-syntax-highlighting
-# zplug paraqles/zsh-plugin-git
-# zplug "plugins/common-aliases", from:oh-my-zsh
-# zplug "plugins/github", from:oh-my-zsh
-# zplug caarlos0/zsh-open-pr
+zplug zsh-users/zsh-syntax-highlighting
+zplug paraqles/zsh-plugin-git
+zplug "plugins/common-aliases", from:oh-my-zsh
+zplug "plugins/github", from:oh-my-zsh
+zplug caarlos0/zsh-open-pr
 # zplug "plugins/adb", from:oh-my-zsh
-# zplug "plugins/z", from:oh-my-zsh
+zplug "plugins/z", from:oh-my-zsh
 # zplug supercrabtree/k
 # zplug s7anley/zsh-geeknote
-# zplug zsh-users/zsh-autosuggestions
-# zplug "plugins/history", from:oh-my-zsh
+zplug zsh-users/zsh-autosuggestions
+zplug "plugins/history", from:oh-my-zsh
 # zplug "plugins/vi-mode", from:oh-my-zsh
-# zplug chrissicool/zsh-256color
+zplug chrissicool/zsh-256color
 # zplug horosgrisa/autoenv
-# zplug zsh-users/zsh-history-substring-search
-# zplug zsh-users/zsh-completions
+zplug zsh-users/zsh-history-substring-search
+zplug zsh-users/zsh-completions
 # zplug "plugins/tmux", from:oh-my-zsh
 # zplug "plugins/tmuxinator", from:oh-my-zsh
 # zplug "plugins/kubectl", from:oh-my-zsh
