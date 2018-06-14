@@ -1,7 +1,7 @@
 class ConfigureVim < Formula
     desc "Configure things required by my VIM setup"
     homepage "https://github.com/atayarani/homebrew-shell"
-    url "https://github.com/atayarani/homebrew-shell/archive/v0.0.36.tar.gz"
+    url "https://github.com/atayarani/homebrew-shell/archive/v0.0.38.tar.gz"
 
     depends_on "vim"
 
@@ -11,8 +11,8 @@ class ConfigureVim < Formula
 
     def caveats; <<~EOS
     In order to load the vimrc here, please run the following:
-      ln -sin #{vim_path} #{ENV["HOME"]}/.vimrc
       mkdir -p #{ENV['HOME']}/.vim/swap
+      ln -sin #{vimrc_path} #{ENV["HOME"]}/.vimrc
       ln -sin #{plug_path} #{ENV["HOME"]}/.vim/plug.vim
     EOS
     end
