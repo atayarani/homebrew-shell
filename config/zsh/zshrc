@@ -32,12 +32,13 @@ zplug zsh-users/zsh-completions
 # zplug "plugins/tmuxinator", from:oh-my-zsh
 # zplug "plugins/kubectl", from:oh-my-zsh
 # zplug zchee/go-zsh-completions
-# 
+ 
 ## Python Bundles
 zplug "plugins/pyenv", from:oh-my-zsh
-# ## Ruby Bundles
-# zplug paraqles/zsh-plugin-ruby
-# zplug "plugins/rbenv", from:oh-my-zsh
+
+## Ruby Bundles
+ zplug paraqles/zsh-plugin-ruby
+ zplug "plugins/rbenv", from:oh-my-zsh
 # 
 # zplug pelletiermaxime/test-kitchen-zsh-plugin
 # 
@@ -78,8 +79,8 @@ zplug load --verbose
 # export APK_HOME="$DOWNLOAD_HOME/APKs"
 # 
 # # online help
-# autoload run-help
-# HELPDIR=/usr/local/share/zsh/help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
 # 
 # # The Fuck
 # #alias fuck='$(thefuck $(fc -ln -1))'
@@ -93,6 +94,6 @@ setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 # 
-# # RbEnv init
-# #eval "$(rbenv init -)"
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+## RbEnv init
+#eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
