@@ -6,9 +6,16 @@ tap 'homebrew/cask-versions'
 # Casks - GUI
 cask 'visual-studio-code'
 cask 'pritunl' # OpenVPN Client
+cask 'amazon-chime'
 
 # Casks - CLI
 cask 'iterm2'
+
+# CLI Tools
+brew 'terraform'
+brew 'awscli'
+brew 'jq'
+brew 'graphviz'
 
 ## OLD STUFF HERE
 # tap 'homebrew/brewdler'
