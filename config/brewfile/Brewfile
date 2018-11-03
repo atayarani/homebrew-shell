@@ -4,16 +4,20 @@ tap 'buo/cask-upgrade'
 tap 'homebrew/cask-versions'
 
 # Casks - GUI
-cask 'intellij-idea'
-cask 'pritunl' # OpenVPN Client
-cask 'amazon-chime'
 cask 'alfred'
+cask 'amazon-chime'
+cask 'authy'
+cask 'caffeine'
+cask 'intellij-idea'
+cask 'keybase'
+cask 'pritunl'
+cask 'slack'
 
 # Casks - CLI
 cask 'iterm2'
 
 # CLI Tools
-brew 'terraform'
+brew 'tfenv'
 brew 'awscli'
 brew 'jq'
 brew 'graphviz'
@@ -51,13 +55,10 @@ brew 'graphviz'
 # cask 'keybase'
 # 
 # # AWS Tools
-# brew 'awscli'
 # brew 'aws-shell'
 # 
 # # Go Tools
 # brew 'go'
 # brew 'godep'
 # 
-# # GUI Tools
-# cask 'slack'
-# 
+
