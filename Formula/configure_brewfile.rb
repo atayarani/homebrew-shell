@@ -4,6 +4,6 @@ class ConfigureBrewfile < Formula
   url "https://github.com/atayarani/homebrew-shell/archive/v0.0.45.tar.gz"
   
   def install
-    system("brew","bundle","--file='#{ENV['HOMEBREW_FIX']}/Brewfile'"
+    system("brew","bundle","--file='#{ENV['HOMEBREW_FIX']}/Brewfile'")
   end
 end
