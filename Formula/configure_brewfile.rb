@@ -1,10 +1,10 @@
 class ConfigureBrewfile < Formula
   desc 'Set up of things I used to manually install from a Brewfile'
   homepage "https://github.com/atayarani/homebrew-shell"
-  url "https://github.com/atayarani/homebrew-shell/archive/v0.0.50.tar.gz"
+  url "https://github.com/atayarani/homebrew-shell/archive/v0.0.51.tar.gz"
 
   def install
-    prefix.install File.join("config", "vim")
+    prefix.install File.join("config", "brewfile")
   end
 
   def caveats;
