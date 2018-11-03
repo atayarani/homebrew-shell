@@ -7,6 +7,7 @@ tap 'homebrew/cask-versions'
 cask 'intellij-idea'
 cask 'pritunl' # OpenVPN Client
 cask 'amazon-chime'
+cask 'alfred'
 
 # Casks - CLI
 cask 'iterm2'
