@@ -3,18 +3,15 @@ class ConfigureBrewfile < Formula
   homepage "https://github.com/atayarani/homebrew-shell"
   url "https://github.com/atayarani/homebrew-shell/archive/v0.0.49.tar.gz"
 
-  keg_only "config only", "there is nothing to execute here"
-
   def install
-    bin.install "true.sh"
+    prefix.install File.join("config", "vim")
   end
 
-  def caveats; <<~EOS
+  def caveats;
+    <<~EOS
     In order to load the Brewfile, please run the following:
-      mkdir -p #{ENV['HOME']}/.vim/swap
-      ln -sin #{vimrc_path} #{ENV["HOME"]}/.vimrc
-      ln -sin #{plug_path} #{ENV["HOME"]}/.vim/plug.vim
-  EOS
+      brew bundle --file=#{brewfile_path}
+    EOS
   end
 
   def brewfile_path

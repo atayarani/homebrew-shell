@@ -1,10 +1,17 @@
 language: objective-c
 cache:
   directories:
-  - $HOME/Library/Caches/Homebrew
+  - "$HOME/Library/Caches/Homebrew"
 before_install:
 - brew update >/dev/null
 script:
 - brew audit ./Formula/*.rb
 - brew install -v ./Formula/*.rb
-- brew test ./Formula/*.rb
+deploy:
+  provider: releases
+  api_key:
+    secure: WGhwOlXUZKW5x2fp1MIXndfmMZmoPyeSfqvHWxdw2LHM5Agq11dS4eHs4SECq05Fof6YYTu3pdHSwx9J8p+QfxnNJbKdLwlaJqzgM+slqgBjLFgIvEdRLuEncXvQ3sIfxJ7IS4ztL6Wdc+AKevxY4Mlr7CDaqS9HoeMzLJdSJHwwxH30PmflSnpM/6wDuak29Un2qwTJ+LZ4srPQ08hvX062gltW/MLX51PZRdG/M172FloxWWtQa1Ktug0UkTeI/S1bbW1THMjZqB0WTka0r9QZHLJXntg2DWR+BmKWeF7jGLqqLCFhDenURc2jrPNJzMBdLx3C/RSVS/5/GWAUxZMKPOQMsZgtPvTYGemsaC05qa9/LPoDMVz7S9xs03sryz5DaOECs+xZUy81wLbTDNjTFXpgP1YnSl7Fl56uNwpi2GHqRdEIFUH3WzY34k+AFKhOr91TIOt7PYPM2NAeB8Mf8oZFlY7JyPM8SLbNUjABmwbX70qw/pCZ/eUvzDWCgc/Dyu+LySVKU4NBXlnsm+e0MeXdk7XI1vwFNUAg2t7lrp1Q9VUEpa2o0PyCLt330HiizFmQxy6ydNVCSeyZGx7q9jPmsuQwKeqT6dDmGrS81QaSyseRyjg+cpb+0JXWDF7D/zQHKV/lsmAkDe4t/IQP8TG2W0fYlgGEehJ669U=
+  file: ''
+  on:
+    repo: atayarani/homebrew-shell
+    branch: feature/brewfile
