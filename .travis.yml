@@ -1,4 +1,7 @@
 language: objective-c
+cache:
+  directories:
+  - $HOME/Library/Caches/Homebrew
 before_install:
 - brew update >/dev/null
 script:
