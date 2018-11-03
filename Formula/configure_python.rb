@@ -11,4 +11,8 @@ class ConfigurePython < Formula
     def install
       bin.install "true.sh"
     end
+
+    test do
+      system "true"
+    end
 end

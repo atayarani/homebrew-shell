@@ -29,4 +29,8 @@ class ConfigureVim < Formula
   def vim_path
     @vim_path ||= File.join(HOMEBREW_PREFIX, "Cellar", name, version, "vim")
   end
+
+  test do
+    system "true"
+  end
 end

@@ -8,10 +8,13 @@ cask 'alfred'
 cask 'amazon-chime'
 cask 'authy'
 cask 'caffeine'
+cask 'grammarly'
 cask 'intellij-idea'
 cask 'keybase'
 cask 'pritunl'
 cask 'slack'
+cask 'textexpander'
+cask 'ipvanish-vpn'
 
 # Casks - CLI
 cask 'iterm2'
@@ -21,6 +24,9 @@ brew 'tfenv'
 brew 'awscli'
 brew 'jq'
 brew 'graphviz'
+
+# Docker Tools
+cask 'docker'
 
 ## OLD STUFF HERE
 # tap 'homebrew/brewdler'
