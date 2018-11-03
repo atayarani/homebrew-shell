@@ -4,7 +4,7 @@ tap 'buo/cask-upgrade'
 tap 'homebrew/cask-versions'
 
 # Casks - GUI
-cask 'visual-studio-code'
+ cask 'intellij-idea'
 cask 'pritunl' # OpenVPN Client
 cask 'amazon-chime'
 
