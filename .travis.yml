@@ -5,6 +5,6 @@ cache:
 #before_install:
 #- brew update >/dev/null
 script:
-- brew audit ./Formula/*.rb
+- brew audit ./Formula/*.rbc
 - brew install -v ./Formula/*.rb
 
